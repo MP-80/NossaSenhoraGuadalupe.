@@ -1,0 +1,169 @@
+:root {
+  --eastern-blue: #1e81b0;
+  --green-white: #eeeee4;
+  --burnt-sienna: #e28743;
+  --tacao: #eab676;
+  --glacier: #76b5c5;
+  --eternity: #21130d;
+  --burnt-umber: #873e23;
+  --powder-blue: #abdbe3;
+  --catalina-blue: #063970;
+  --chathams-blue: #154c79;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--burnt-sienna);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--tacao);
+}
+
+.content {
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Texto centralizado inicial */
+.center-text {
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+.center-text h1 {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+.center-text p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.carousel-caption {
+  background-color: var(--glacier);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--eternity);
+}
+.carousel-caption h5,
+.carousel-caption p {
+  color: var(--eternity);
+}
+.carousel-indicators [data-bs-target] {
+  background-color: var(--eastern-blue);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--glacier);
+  border-radius: 50%;
+}
+
+body {
+  background-color: var(--tacao);
+  color: var(--eternity);
+  margin: 0;
+  padding: 0;
+}
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: auto;
+}
+footer p { 
+font-size: 12px; 
+line-height: 1.; 
+margin-top: auto;
+}
+/* seta retornar*/
+.back-arrow {
+  position: sticky;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: white;
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+body.santaschagas {
+  background-image: url(/Imagens/NossaSenhoraGuadalupeNaEstapaOriginal.jpg); 
+  background-repeat: no-repeat; 
+  background-position: center center;
+  background-attachment: fixed;/* Faz a imagem rolar junto com o texto */
+  background-size: cover;/* Ajusta a imagem para cobrir toda a tela */
+  filter: opacity(50);
+  color: black;               
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.prayer-step { 
+ background-color: rgba(255, 255, 255, 0.706); /* Fundo branco semi-transparente */
+ padding: 15px;
+ border-radius: 5px;
+ margin-bottom: 20px;
+ color: #000000;  
+}
+body.tercoCompleto {
+  background-image: url('/Imagens/NossaSenhoraGuadalupeNaEstapaOriginal.jpg'); 
+  background-repeat: no-repeat;                 
+  background-position: center center;           
+  background-attachment: fixed;                 
+  background-size: cover;                       
+  filter: brightness(1.3); /* Aumenta a claridade da imagem de fundo */
+  color: #343a40;                              
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.prayer-step {
+  background-color: rgba(255, 255, 255, 0.95); /* Fundo branco semi-transparente */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #000;  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra para destaque */
+}
+
+.prayer-step h1, .prayer-step h2, .prayer-step p, .prayer-step blockquote {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);  /* Sombra no texto para melhorar a legibilidade */
+}
