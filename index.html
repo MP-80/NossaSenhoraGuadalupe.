@@ -124,14 +124,19 @@
 
   <!-- Contador -->
   <script>
-    fetch('https://api.countapi.xyz/hit/marquinhosaojose.com.br/visitas')
-      .then(res => res.json())
-      .then(res => {
-        document.getElementById('contador').textContent = res.value.toLocaleString('pt-BR');
-      })
-      .catch(() => {
-        document.getElementById('contador').textContent = 'Erro ao carregar';
-      });
-  </script>
+  const contadorEl = document.getElementById('contador');
+
+  async function atualizarContador() {
+    try {
+      const resposta = await fetch('https://api.countapi.xyz/update/marquinhosaojose.com.br/visitas/?amount=1');
+      const dados = await resposta.json();
+      contadorEl.textContent = dados.value.toLocaleString('pt-BR');
+    } catch (erro) {
+      console.error('Erro ao carregar contador:', erro);
+      contadorEl.textContent = 'Erro';
+    }
+  }
+  atualizarContador();
+</script>
 </body>
 </html>
